@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root', // Substitua pelo seu usuário do MySQL
-  password: '', // Substitua pela sua senha do MySQL
+  password: '1234', // Substitua pela sua senha do MySQL
   database: 'angular_mysql', // Nome do banco de dados
 });
 
