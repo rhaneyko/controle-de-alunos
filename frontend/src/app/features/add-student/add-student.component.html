@@ -1,0 +1,27 @@
+<div class="container mt-5">
+
+  <h2>Adicione um novo aluno</h2>
+
+  <form (ngSubmit)="addStudent()" class="mt-5">
+    <div class="form-group">
+      <label class="m-2">Nome Completo</label>
+      <input [(ngModel)]="name" type="email" class="form-control" placeholder="Digite o nome completo do aluno">
+    </div>
+    <br/>
+    <div class="form-group">
+      <label class="m-2">Email</label>
+      <input [(ngModel)]="email" type="email" class="form-control" placeholder="Digite o email do aluno">
+    </div>
+    <br/>
+    <div class="form-group">
+      <label class="m-2">Curso</label>
+      <input [(ngModel)]="course" type="text" class="form-control" placeholder="Digite o curso do aluno">
+    </div>
+    <br/>
+    <div class="container mt-5 d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary m-2">Adicionar aluno</button>
+      <button routerLink="/students" class="btn btn-secondary m-2">Voltar</button>
+    </div>
+  </form>
+
+</div>
